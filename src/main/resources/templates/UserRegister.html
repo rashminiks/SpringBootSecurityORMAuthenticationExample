@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">  
+<head></head>  
+<body>
+<form action="save"  method="post">
+<pre>
+NAME:<input type="text" name="name"/>
+EMAIL:<input type="text" name="email"/>
+PASSWORD:<input type="password" name="pwd"/>
+ROLES:<input type="checkbox" name="roles" value="ADMIN"/>ADMIN
+      <input type="checkbox" name="roles" value="EMPLOYEE"/>EMPLOYEE
+      <input type="submit" value="AddUser"/>
+</pre>
+</form>
+<div th:text="${message}"></div>
+</body>
+</html>
+
