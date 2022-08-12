@@ -28,6 +28,8 @@ public class UserController {
 		Integer id = service.saveUser(user);
 		String msg = "User" + id + "saved";
 		model.addAttribute("message", msg);
+	System.out.println("...");
 		return "UserRegister";
+		
 	}
 }
